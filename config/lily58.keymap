@@ -20,11 +20,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                    &kp N6  &kp N7    &kp N8         &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                                     &kp Y   &kp U     &kp I          &kp O    &kp P     &kp LBKT
-&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                                     &kp H   &kp J     &kp K          &kp L    &kp SEMI  &mt RCTRL SQT
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp MINUS      &kp RIGHT_BRACKET  &kp N   &kp M     &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LALT  &kp LGUI  &mo 1   &lt 3 SPACE    &lt 4 SPACE        &mo 2   &kp RGUI  &kp RIGHT_ALT
+&kp ESC        &kp N1       &kp N2      &kp N3      &kp N4         &kp N5                                    &kp N6  &kp N7         &kp N8      &kp N9      &kp N0          &kp MINUS
+&kp TAB        &kp Q        &kp W       &kp E       &kp R          &kp T                                     &kp Y   &kp U          &kp I       &kp O       &kp P           &kp LBKT
+&kp CLCK       &mt LCTRL A  &mt LALT S  &mt RGUI D  &mt LSHFT F    &kp G                                     &kp H   &mt RSHFT J    &mt LGUI K  &mt LALT L  &mt LCTRL SEMI  &kp SQT
+&kp BACKSLASH  &kp Z        &kp X       &kp C       &kp V          &kp B   &kp GRAVE      &kp RIGHT_BRACKET  &kp N   &kp M          &kp COMMA   &kp DOT     &kp FSLH        &kp EQUAL
+                                        &kp RET     &kp BACKSPACE  &mo 1   &lt 3 SPACE    &lt 4 SPACE        &mo 2   &kp BACKSPACE  &kp RET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -39,11 +39,11 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                     &kp F7     &kp F8            &kp F9             &kp F10        &kp F11       &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans                     &kp PLUS   &kp MINUS         &kp KP_MULTIPLY    &kp KP_DIVIDE  &kp KP_EQUAL  &kp BACKSLASH
-&trans  &trans  &trans  &trans  &trans  &trans                     &kp GRAVE  &kp LESS_THAN     &kp GREATER_THAN   &kp LPAR       &kp RPAR      &kp TILDE
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp RET  &kp PIPE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LBRC       &kp RBRC      &kp UNDERSCORE
-                        &trans  &trans  &trans  &trans    &trans   &trans     &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp F7     &kp F8            &kp F9             &kp F10        &kp F11       &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp PLUS   &kp MINUS         &kp KP_MULTIPLY    &kp KP_DIVIDE  &kp KP_EQUAL  &kp BACKSLASH
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp GRAVE  &kp LESS_THAN     &kp GREATER_THAN   &kp LPAR       &kp RPAR      &kp TILDE
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PIPE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LBRC       &kp RBRC      &kp UNDERSCORE
+                        &trans  &trans  &trans  &trans    &trans  &trans     &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -53,7 +53,7 @@
             bindings = <
 &kp F1            &kp F2         &kp F3        &kp F4      &kp F5        &kp F6                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans            &trans         &trans        &trans      &trans        &kp RS(F6)                       &trans  &trans  &trans  &trans  &trans  &trans
-&kp CLCK          &kp EXCL       &kp AT        &kp HASH    &kp DOLLAR    &kp PRCNT                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans            &kp EXCL       &kp AT        &kp HASH    &kp DOLLAR    &kp PRCNT                        &trans  &trans  &trans  &trans  &trans  &trans
 &kp K_PLAY_PAUSE  &kp C_BRI_DEC  &kp C_BRI_UP  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp DEL    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                                &trans      &trans        &trans        &trans     &trans  &trans  &trans  &trans
             >;
